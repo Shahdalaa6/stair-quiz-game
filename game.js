@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const QUESTIONS = [
   { q:"A leader walks into the office and says, “We need to talk about your targets.” While the employee starts explaining their challenges, the leader answers a phone call mid-conversation and walks away saying, “We’ll finish later.”"
 , correct:1, choices:["Selective Listening","Ignoring","Attentive Listening"] },
@@ -119,7 +118,6 @@ function showCelebration() {
 }
 
 
-=======
 const QUESTIONS = [
   { q:"A leader walks into the office and says, “We need to talk about your targets.” While the employee starts explaining their challenges, the leader answers a phone call mid-conversation and walks away saying, “We’ll finish later.”"
 , correct:1, choices:["Selective Listening","Ignoring","Attentive Listening"] },
@@ -240,4 +238,3 @@ function showCelebration() {
 }
 
 
->>>>>>> 70c415da09be81306fbf0bef73cf1749ff091574
