@@ -118,38 +118,8 @@ function showCelebration() {
 }
 
 
-const QUESTIONS = [
-  { q:"A leader walks into the office and says, “We need to talk about your targets.” While the employee starts explaining their challenges, the leader answers a phone call mid-conversation and walks away saying, “We’ll finish later.”"
-, correct:1, choices:["Selective Listening","Ignoring","Attentive Listening"] },
-  { q:"The leader approaches a team member and says, “Tell me what’s on your mind.” While the employee talks, the leader keeps smiling and nodding but never asks a single question. At the end, they say, “Great, keep up the good work,” and leave.", correct:0, choices:["Pretend Listening","Selective Listening","Ignoring"] },
-  { q:"The leader calls the employee into a meeting: “I want to understand your concerns.” The employee talks about lack of resources, unclear priorities, and feeling stressed. The leader responds only to resources: “We’ll add one more person to help,” ignoring the other issues.", correct:1, choices:["Pretend Listening","Selective Listening","Empathically Listening"] },
-  { q:"The leader says, “I noticed you’ve been quiet in meetings—can we talk?” They maintain eye contact, take notes, and summarize: “So, you’re saying unclear priorities and heavy workload are causing stress. Did I get that right?”", correct:2, choices:["Empathically Listening","Ignoring","Attentive Listening"] },
-  { q:"The leader approaches and says, “I’ve noticed you seem under pressure—let’s talk.” After listening, they respond: “It sounds like you feel unsupported and overwhelmed. That must be tough. Let’s work together to fix this.”", correct:2, choices:["Pretend Listening","Selective Listening","Empathically Listening"] }
-];
 
-let progressStep = 0;
-let questionIndex = 0;
-let score = 0;
 
-const modal = document.getElementById('quizModal');
-const qText = document.getElementById('questionText');
-const choicesEl = document.getElementById('choices');
-const feedback = document.getElementById('feedback');
-const character = document.getElementById('character');
-const startPage = document.getElementById('startPage');
-const gameArea = document.getElementById('gameArea');
-const celebrationModal = document.getElementById('celebrationModal');
-const scoreText = document.getElementById('scoreText');
-const restartBtn = document.getElementById('restartBtn');
-
-const positions = [
-  { left: "0%",  bottom: "0%" },
-  { left: "14%", bottom: "16%" },
-  { left: "28%", bottom: "32%" },
-  { left: "42%", bottom: "48%" },
-  { left: "56%", bottom: "64%" },
-  { left: "70%", bottom: "80%" } // Top step visible
-];
 
 
 document.getElementById('startBtn').onclick = () => {
