@@ -1,3 +1,5 @@
+console.log("Game JS loaded");
+
 const QUESTIONS = [
   { q:"A leader walks into the office and says, “We need to talk about your targets.” While the employee starts explaining their challenges, the leader answers a phone call mid-conversation and walks away saying, “We’ll finish later.”"
 , correct:1, choices:["Selective Listening","Ignoring","Attentive Listening"] },
