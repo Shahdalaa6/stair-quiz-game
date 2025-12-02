@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Stair Quiz Game</title>
+  <link rel="stylesheet" href="game.css">
 </head>
 <body>
 
@@ -16,20 +17,18 @@
 </div>
 
 <!-- Game Area -->
-<div id="gameArea">
-<div class="stairs">
-  <div class="step" data-i="0"><span class="label">Start</span></div>
-  <div class="step" data-i="1"><span class="label">Ignoring</span></div>
-  <div class="step" data-i="2"><span class="label">Pretend Listening</span></div>
-  <div class="step" data-i="3"><span class="label">Selective Listening</span></div>
-  <div class="step" data-i="4"><span class="label">Attentive Listening</span></div>
-  <div class="step" data-i="5"><span class="label">Empathically Listening</span></div>
-<div class="character" id="character">
-  <img src="character.gif" alt="Character" />
-</div>
-</div>
-
-
+<div id="gameArea" style="display:none;">
+  <div class="stairs">
+    <div class="step" data-i="0"><span class="label">Start</span></div>
+    <div class="step" data-i="1"><span class="label">Ignoring</span></div>
+    <div class="step" data-i="2"><span class="label">Pretend Listening</span></div>
+    <div class="step" data-i="3"><span class="label">Selective Listening</span></div>
+    <div class="step" data-i="4"><span class="label">Attentive Listening</span></div>
+    <div class="step" data-i="5"><span class="label">Empathically Listening</span></div>
+    <div class="character" id="character">
+      <img src="character.gif" alt="Character" />
+    </div>
+  </div>
 </div>
 
 <!-- Quiz Modal -->
@@ -50,115 +49,26 @@
   </div>
 </div>
 
-<!-- Birthday-style celebration overlay -->
+<!-- Celebration Overlay -->
 <div class="celebration-overlay">
-  <!-- Balloons -->
   <div class="balloon"></div>
   <div class="balloon"></div>
   <div class="balloon"></div>
   <div class="balloon"></div>
   <div class="balloon"></div>
 
-  <!-- Confetti -->
   <div class="confetti"></div>
   <div class="confetti"></div>
   <div class="confetti"></div>
   <div class="confetti"></div>
   <div class="confetti"></div>
 
-  <!-- Fireworks -->
   <div class="firework"></div>
   <div class="firework"></div>
   <div class="firework"></div>
   <div class="firework"></div>
   <div class="firework"></div>
 </div>
-
-
-
-
-<!-- Link to external JS -->
-<script src="game.js"></script>
-</body>
-</html>
-
-<link rel="stylesheet" href="game.css">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Stair Quiz Game</title>
-</head>
-<body>
-
-<!-- Start Page -->
-<div id="startPage">
-  <h1>Welcome to the Listening Levels Quiz</h1>
-  <p>Answer questions to climb the stairs!</p>
-  <button id="startBtn">Start Game</button>
-</div>
-
-<!-- Game Area -->
-<div id="gameArea">
-<div class="stairs">
-  <div class="step" data-i="0"><span class="label">Start</span></div>
-  <div class="step" data-i="1"><span class="label">Ignoring</span></div>
-  <div class="step" data-i="2"><span class="label">Pretend Listening</span></div>
-  <div class="step" data-i="3"><span class="label">Selective Listening</span></div>
-  <div class="step" data-i="4"><span class="label">Attentive Listening</span></div>
-  <div class="step" data-i="5"><span class="label">Empathically Listening</span></div>
-<div class="character" id="character">
-  <img src="character.gif" alt="Character" />
-</div>
-</div>
-
-
-</div>
-
-<!-- Quiz Modal -->
-<div class="modal" id="quizModal">
-  <div class="modal-content">
-    <h3 id="questionText"></h3>
-    <div class="choices" id="choices"></div>
-    <div class="feedback" id="feedback"></div>
-  </div>
-</div>
-
-<!-- Celebration Modal -->
-<div class="modal" id="celebrationModal">
-  <div class="celebration-content">
-    <h2>🎉 Congratulations! 🎉</h2>
-    <p id="scoreText"></p>
-    <button id="restartBtn">Play Again</button>
-  </div>
-</div>
-
-<!-- Birthday-style celebration overlay -->
-<div class="celebration-overlay">
-  <!-- Balloons -->
-  <div class="balloon"></div>
-  <div class="balloon"></div>
-  <div class="balloon"></div>
-  <div class="balloon"></div>
-  <div class="balloon"></div>
-
-  <!-- Confetti -->
-  <div class="confetti"></div>
-  <div class="confetti"></div>
-  <div class="confetti"></div>
-  <div class="confetti"></div>
-  <div class="confetti"></div>
-
-  <!-- Fireworks -->
-  <div class="firework"></div>
-  <div class="firework"></div>
-  <div class="firework"></div>
-  <div class="firework"></div>
-  <div class="firework"></div>
-</div>
-
-
-
 
 <!-- Link to external JS -->
 <script src="game.js"></script>
